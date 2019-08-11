@@ -1,0 +1,10 @@
+version: '2'
+services:
+  android_builder:
+    build: .
+    image: tornaco/android_builder:latest
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - /Volumes/PASSPORT/docker/volumes/android_builder/home:/home
